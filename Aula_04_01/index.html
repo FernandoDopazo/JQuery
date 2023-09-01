@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+       #bloco{
+            width: 400px;
+            height: 400px;
+            background-color: black;
+
+       }
+       #texto{
+            text-align: center;
+            color: white;
+            padding-top: 180px;
+            
+
+       }
+
+    </style>
+</head>
+<body>
+    <div id="bloco">
+        <p id="texto"></p>
+    </div>
+
+<script>
+    $('#bloco').click(()=>{
+        $("#texto").text("Vasco da Gama")
+    })
+    $('#bloco').mouseenter(()=>{
+        $("#texto").text("Tira esse mouse daqui")
+    })
+    $('#bloco').mouseleave(()=>{
+        $("#texto").text("Obrigado")
+    })
+
+    $('#bloco').mousemove(()=>{
+        $("#texto").text("kkkk faz cosquinha")
+    })
+
+</script>
+    
+</body>
+</html>
